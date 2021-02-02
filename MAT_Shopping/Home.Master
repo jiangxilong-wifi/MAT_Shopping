@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -16,28 +16,28 @@
     <form id="form1" runat="server">
         <%-- 顶部导航栏 --%>
         <div id="header">
-            <div class="header"></div>
-            <div class="header"></div>
-            <div class="header"></div>
-            <div class="header"></div>
-            <div class="header"></div>
+            <div id="header_left"><p class="logo-text">MAT后台管理</p></div>
+            <div id="header_right">
+                <div class="header">
+                   
+                </div>
+            </div>
         </div>
-        
+
         <%-- 顶部导航栏 --%>
 
         <%-- 中间内容区域 --%>
         <div id="contion">
             <%-- 中间左模块栏 --%>
-            <div class="col-md-2 left_nav">
-
+            <div class="left_nav">
             </div>
             <%-- 中间右主内容展示区域 --%>
-             <div class="col-md-10 ">
+            <div class="right_contion">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
         </div>
-       
+
     </form>
 </body>
 </html>
