@@ -17,21 +17,19 @@
         <%-- 顶部导航栏 --%>
         <div id="header">
             <div class="header">
-                <img class="logo" src="Photo/MAT商城logo.jpg" />
-                <a class="logo-text">MAT商城</a>
+                <p class="logo-text">MAT后台管理</p>
             </div>
             <div class="header"></div>
             <div class="header"></div>
-            <div class="header"></div>
             <div class="header">
-                <a class="Login">登录</a>
+                <p class="Login">登录</p>
             </div>
         </div>
         
         <%-- 顶部导航栏 --%>
 
         <%-- 中间内容区域 --%>
-        <div>
+        <div id="contion">
             <%-- 中间左模块栏 --%>
             <div class="col-md-2 left_nav">
 

@@ -1,4 +1,5 @@
-﻿#header {
+﻿
+#header {
     width: 100%;
     height: 90px;
     border:1px solid red;
@@ -7,29 +8,33 @@
 .header{
     width:50%;
     height:90px;
-    background-color:goldenrod;
+    background-color:rgb(82,198,164);
     border:1px solid red;
 }
 
-.left_nav{
-    height:100%;
-    background-color:dimgrey;
-}
 
-.logo{
-    float:left;
-    height:75px;
-    width:75px;
+
+/*----------中间内容区域----------*/
+#contion {
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
 }
 .logo-text{
+    padding-left:40px;
     line-height:90px;
-    float:right;
-    font-size:50px;
+    font-size:35px;
     color:white;
 }
-.Login{
-    float:right;
-    line-height:90px;
-    font-size:30px;
-    color:white;
+.left_nav {
+    height: 100%;
+    background-color: rgb(44,56,74);
 }
+.Login {
+    float: right;
+    padding-right: 20px;
+    line-height: 90px;
+    font-size: 25px;
+    color: white;
+}
+
