@@ -15,19 +15,22 @@
 <body>
     <form id="form1" runat="server">
         <%-- 顶部导航栏 --%>
-        <div class="col-md-3 header">
+        <div class="col-md-2 header">
             <img class="logo"  src="Photo/MAT商城logo.jpg"/>
+            <a class="text">MAT商城</a>
         </div>
-        <div class="col-md-5 header"></div>
-        <div class="col-md-4 header"></div>
+        <div class="col-md-7 header"></div>
+        <div class="col-md-3 header"></div>
         <%-- 顶部导航栏 --%>
 
         <%-- 中间内容区域 --%>
         <div>
             <%-- 中间左模块栏 --%>
-            <div></div>
+            <div class="col-md-2 left_nav">
+
+            </div>
             <%-- 中间右主内容展示区域 --%>
-             <div>
+             <div class="col-md-10 ">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
