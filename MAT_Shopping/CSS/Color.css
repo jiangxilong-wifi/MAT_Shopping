@@ -1,4 +1,10 @@
 ﻿.header{
-    height:60px;
+    height:90px;
     background-color:goldenrod;
 }
+
+.left_nav{
+    height:850px;
+    background-color:dimgrey;
+}
+
