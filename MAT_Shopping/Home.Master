@@ -15,12 +15,14 @@
 <body>
     <form id="form1" runat="server">
         <%-- 顶部导航栏 --%>
-        <div class="col-md-2 header">
-            <img class="logo"  src="Photo/MAT商城logo.jpg"/>
-            <a class="text">MAT商城</a>
+        <div id="header">
+            <div class="header"></div>
+            <div class="header"></div>
+            <div class="header"></div>
+            <div class="header"></div>
+            <div class="header"></div>
         </div>
-        <div class="col-md-7 header"></div>
-        <div class="col-md-3 header"></div>
+        
         <%-- 顶部导航栏 --%>
 
         <%-- 中间内容区域 --%>
