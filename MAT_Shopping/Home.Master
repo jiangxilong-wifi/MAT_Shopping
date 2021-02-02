@@ -11,6 +11,38 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="CSS/Color.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script>
+        window.onload = function () {
+            let show = document.getElementById("show");
+            let menu = document.getElementById("menu");
+
+            show.onmouseover = function(){
+                menu.style.display = "block";
+            }
+
+            show.onmouseout = function () {
+                let menux = menu.offsetLeft;
+                let menuy = menu.offsetTop;
+                let menuX = menu.offsetLeft + menu.offsetWidth;
+                let menuY = menu.offsetTop + menu.offsetHeight;
+
+                let event = window.event;
+                let mouseX = event.clientX;
+                let mouseY = event.clientY;
+
+                if (mouseX < menux || mouseX > menuX || mouseY < menuY || mouseY > menuY) {
+                    menu.style.display = "none";
+                }
+            }
+            menu.onmouseover = function () {
+                menu.style.display = "block";
+            }
+            menu.onmouseleave = function () {
+                menu.style.display = "none";
+            }
+        }
+       
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,9 +50,12 @@
         <div id="header">
             <div id="header_left"><p class="logo-text">MAT后台管理</p></div>
             <div id="header_right">
-                <div class="header">
-                   
-                </div>
+                <div id="show"><a href="#">用户名</a></div>
+                <ul id="menu">
+                    <li><a href="#">基本资料</a></li>
+                    <li><a href="#">修改密码</a></li>
+                    <li><a href="#">退出登录</a></li>
+                </ul>
             </div>
         </div>
 
@@ -34,6 +69,7 @@
             <%-- 中间右主内容展示区域 --%>
             <div class="right_contion">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
                 </asp:ContentPlaceHolder>
             </div>
         </div>

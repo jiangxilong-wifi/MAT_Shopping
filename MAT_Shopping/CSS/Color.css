@@ -23,16 +23,43 @@
 #header_right {
     width: 100%;
     height:90px;
+    background-color:rgb(82,198,164);
+    border:1px solid red;
     background-color: rgb(82,198,164);
     border: 1px solid red;}
 
-/*中间内容区域*/
 
+/*中间内容区域*/
+#contion {
+    width: 100%;
+    height: 850px;
+}
 .left_nav {
     height: 850px;
     width: 16%;
     background-color: rgb(44,57,75);}
-
+<<<<<<<<< Temporary merge branch 1
+/*----------中间内容区域----------*/
+.logo-text{
+    padding-left:40px;
+    line-height:90px;
+    font-size:35px;
+    color:white;}
+.left_nav {
+    height: 100%;
+    background-color: rgb(44,56,74);}
+li{
+    list-style:none;}
+#show{
+    border:1px solid #ccc;
+    background-color:pink;}
+#menu{
+    display:none;
+    border:1px solid #ccc;
+    background:rgba(0,0,0,0.6);}
+#menu a{
+    color:#fff;
+    text-decoration:none;}
 .right_contion {
     height: 850px;
     width: 85%;}
@@ -41,5 +68,6 @@
     padding-right: 20px;
     line-height: 90px;
     font-size: 25px;
-    color: white;}
+    color: white;
+    text-decoration:none;}
 
