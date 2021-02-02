@@ -11,8 +11,8 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="CSS/Color.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-</head>
+    
+</head> 
 <body>
     <form id="form1" runat="server">
         <%-- 顶部导航栏 --%>
