@@ -1,10 +1,17 @@
-﻿.header{
+﻿#header {
+    width: 100%;
+    height: 90px;
+    border:1px solid red;
+}
+.header{
+    width:50%;
+    float:left;
     height:90px;
     background-color:goldenrod;
 }
 
 .left_nav{
-    height:850px;
+    height:100%;
     background-color:dimgrey;
 }
 

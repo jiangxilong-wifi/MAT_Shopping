@@ -15,8 +15,11 @@
 <body>
     <form id="form1" runat="server">
         <%-- 顶部导航栏 --%>
-        <div class="col-md-8 header"></div>
-        <div class="col-md-4 header"></div>
+        <div id="header">
+            <div class="header"></div>
+            <div class="header"></div>
+        </div>
+        
         <%-- 顶部导航栏 --%>
 
         <%-- 中间内容区域 --%>
