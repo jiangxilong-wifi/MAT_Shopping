@@ -1,5 +1,5 @@
 ﻿* {
-    font-size: 20px;
+    font-size: 12px;
     padding: 0px;
     margin: 0px;
     background-color: #008c7e;
@@ -13,6 +13,7 @@
 }
 
 .Login-text {
+    font-size:2.3rem;
     padding-right: 10px;
     text-align: center;
     line-height: 65px;
@@ -27,14 +28,16 @@
 }
 
 .Login-pwd {
+    font-size:1.5rem;
     text-align: center;
     line-height: 65px;
     background-color: white;
 }
 
 .Login-user_text {
+    font-size: 1.5rem;
     background-color: white;
-    width: 300px;
+    width: 280px;
     height: 30px;
 }
 
@@ -43,21 +46,22 @@
     height: 30px;
     text-align: left;
     line-height: 25px;
-    margin-left: 48px;
+    margin-left: 70px;
     background-color: white;
 }
 
 .btnLogin-text {
-    margin-left: 48px;
+    margin-left: 70px;
     text-align: center;
     line-height: 30px;
-    width: 300px;
+    width: 280px;
 }
 
-.Login-chockbox input {
+.Login-chockbox input{
+    height:14px;
+    width:14px;
     float: left;
-    margin-top: 6px;
-    margin-right: 2px;
+    
 }
 
 .Login-logo{

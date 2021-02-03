@@ -8,6 +8,14 @@
     <title></title>
     <link href="CSS/Login.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+	<script src="Scripts/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function(){
+            $(".btnLogin-text").click(function () {
+                location.href = "Load.aspx";
+            })
+        })
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -22,7 +30,7 @@
 				<input type="text" placeholder="密码" class="Login-user_text" />
 			</div>
 			<div class="Login-chockbox">
-				<input type="checkbox" />记住密码
+				<input type="checkbox" />&nbsp;记住密码
 			</div>
 		    <input class="btnLogin-text" type="button" value="登录" />
 		</div>
