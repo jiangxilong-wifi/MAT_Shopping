@@ -113,6 +113,7 @@
     <Content Include="CSS\Color.css" />
     <Content Include="CSS\Customer.css" />
     <Content Include="CSS\CustomerOrders.css" />
+    <Content Include="CSS\GoodsInformation.css" />
     <Content Include="CSS\Load.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CustomerOrders.aspx" />
@@ -125,6 +126,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="GoodsInformation.aspx" />
     <Content Include="home.aspx" />
     <Content Include="Home.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -170,6 +172,13 @@
     </Compile>
     <Compile Include="CustomerOrders.aspx.designer.cs">
       <DependentUpon>CustomerOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsInformation.aspx.cs">
+      <DependentUpon>GoodsInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsInformation.aspx.designer.cs">
+      <DependentUpon>GoodsInformation.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>

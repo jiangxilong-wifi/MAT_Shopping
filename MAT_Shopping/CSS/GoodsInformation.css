@@ -1,0 +1,114 @@
+﻿* {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.go1 {
+    border: 1px solid gainsboro;
+    margin: 1%;
+    width: 98%;
+    height: 70px;
+    display: flex;
+}
+
+.go2 {
+    border: 1px solid gainsboro;
+    border-left: 6px solid green;
+    margin: 1%;
+    width: 98%;
+    height: 70px;
+    display: flex;
+}
+
+.go3 {
+    padding: 10px;
+    border: 1px solid gainsboro;
+    width: 97.3%;
+    height: 630px;
+    margin: 1%;
+}
+
+.go2-first {
+    display: flex;
+    width: 20%;
+    height: 70px;
+}
+
+.go2-two {
+    width: 60%;
+    height: 70px;
+}
+
+.go1-all {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 8%;
+    height: 50px;
+    background-color: rgb(82,198,164);
+}
+
+.go1-alls {
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 8%;
+    height: 50px;
+    border: 1px solid gainsboro;
+}
+
+.go1-all_text {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.go1-alls_text {
+    font-size: 1.5rem;
+    color: rgb(82,198,164);
+    text-align: center;
+    line-height: 50px;
+}
+
+.go2-first_text {
+    margin-left: 20px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5rem;
+}
+
+.go2-first_input {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    height: 40px;
+    width: 200px;
+}
+
+.go3-adddel {
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+
+.go3-ad {
+    width: 100px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(15,135,249);
+}
+
+.go3-del {
+    margin-left: 20px;
+}
+
+.go3-add {
+    margin-left: 0px;
+}
+
+.go3-gridView {
+    margin-top: 15px;
+    width: 100%;
+    height: 85%;
+    background-color: skyblue;
+}
