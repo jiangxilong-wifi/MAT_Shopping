@@ -39,6 +39,29 @@
     padding-top: 40px;
     background-color: rgb(44,57,75);
 }
+/*中间子版页区域*/
+.no1 {
+    border-bottom: 2px solid gainsboro;
+    width: 100%;
+    height: 40px;
+    display:flex;
+}
+#home {
+    text-align: center;
+    line-height: 40px;
+    width: 130px;
+    height: 40px;
+}
+.box-left_text {
+    padding-left:20px;
+    padding-right:40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#Customer-header {
+    display: flex;
+}
 
 .right_contion {
     height: 850px;

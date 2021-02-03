@@ -3,11 +3,7 @@
     margin: 0px;
 }
 
-.no1 {
-    border-bottom: 2px solid gainsboro;
-    width: 100%;
-    height: 40px;
-}
+
 .no2 {
     border: 1px solid gainsboro;
     border-left: 6px solid green;
@@ -24,45 +20,7 @@
     margin: 1%;
 }
 
-.Customer-header-first {
-    width: 20%;
-    height: 40px;
-    border: 1px solid paleturquoise;
-}
 
-.Customer-header-second {
-    width: 50%;
-    height: 40px;
-    border: 1px solid paleturquoise;
-}
-
-.Customer-header-third {
-    width: 30%;
-    height: 40px;
-    border: 1px solid paleturquoise;
-}
-
-.Customer-text-one {
-    line-height: 40px;
-    color: darkgray;
-    text-align: center;
-}
-
-.Customer-text-two {
-    line-height: 40px;
-    padding-left: 40px;
-    text-align: left;
-}
-
-.Customer-text-three {
-    line-height: 40px;
-    padding-right: 40px;
-    text-align: right;
-}
-
-#Customer-header {
-    display: flex;
-}
 
 #Customer-section {
     margin: 15px;

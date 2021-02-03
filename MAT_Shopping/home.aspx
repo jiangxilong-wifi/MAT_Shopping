@@ -4,18 +4,7 @@
     <link href="CSS/Customer.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <div class="no1">
-			<div id="Customer-header">
-              <div class="Customer-header-first">
-              	<p class="Customer-text-one">首页</p>
-              </div>
-              <div class="Customer-header-second">
-              	<p class="Customer-text-two">用户信息管理</p>
-              </div>
-              <div class="Customer-header-third">
-              	<p class="Customer-text-three">页面操作</p>
-              </div>
-		</div>
+   
 		<div class="no2">
 			<div id="Customer-section">
               <div class="section-second">
