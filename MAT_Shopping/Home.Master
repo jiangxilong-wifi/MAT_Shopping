@@ -61,7 +61,7 @@
                 });
 
                 $(".li-text-user").click(function () {
-                    location.href = "home.aspx";
+                    location.href = "home.aspx"; 
                 })
                
 			})
