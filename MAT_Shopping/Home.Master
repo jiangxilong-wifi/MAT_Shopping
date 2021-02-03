@@ -20,7 +20,7 @@
                         $("#ull").slideDown(200).css("display", "block");
                         $("#ull").css("background-color", "rgb(34,47,72)")
                         $(this).css("border-bottom", "4px solid gray")
-                        
+                        location.href = "/WebForm1.aspx";
 						tooff1=false;
 						
 					}else{
@@ -60,9 +60,7 @@
                     }
                 });
 
-                $(".li-text-user").click(function () {
-                    location.href = "home.aspx";
-                })
+
                
 			})
 			
@@ -90,7 +88,7 @@
             <div class="left_nav">
                 <div class="left_nav-grid left_nav-grid-width" id="left_nav-grid-1">用户管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull">
-                	<li class="li-text li-text-user">用户信息管理</li>
+                	<li class="li-text">用户信息管理</li>
                 	<li class="li-text">用户订单管理</li>
                 </ul>
                 <div class="left_nav-grid" id="left_nav-grid-2">商品管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
