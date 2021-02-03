@@ -13,7 +13,8 @@
 		$(function(){
             $(".btnLogin-text").click(function () {
                 location.href = "Load.aspx";
-            })
+			})
+			$("#tbName").blur(function () { $(this).text("fds"); })
         })
     </script>
 </head>
@@ -23,16 +24,18 @@
 			<div class="Login-text">MAT后台管理</div>
 			<div class="Login-user">
 				<span class="Login-logo glyphicon glyphicon-user"></span>
-				<input type="text" placeholder="用户名或者邮箱" class="Login-user_text"/>
-			</div>
+                <asp:TextBox ID="tbName" runat="server" text="手机号或邮箱" class="Login-user_text" BorderStyle="Solid"></asp:TextBox>
+			</div>  
 			<div class="Login-pwd">
 				<span class="Login-logo glyphicon glyphicon-lock"></span>
-				<input type="text" placeholder="密码" class="Login-user_text" />
+				<asp:TextBox ID="TextBox2" runat="server" text="密码" class="Login-user_text" BorderStyle="Solid"></asp:TextBox>
+				
 			</div>
 			<div class="Login-chockbox">
 				<input type="checkbox" />&nbsp;记住密码
 			</div>
-		    <input class="btnLogin-text" type="button" value="登录" />
+            <asp:Button ID="Button1" runat="server" Text="登录" class="btnLogin-text" ForeColor="White"/>
+		    
 		</div>
     </form>
 </body>
