@@ -97,17 +97,15 @@
                 </ul>
                 <div class="left_nav-grid" id="left_nav-grid-2">商品管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull2">
-                	<li class="li-text">商品进出管理</li>
-                	<li class="li-text">2</li>
-                	<li class="li-text">3</li>
-                	<li class="li-text">4</li>
+                	<li class="li-text">商品信息管理</li>
+                	<li class="li-text">商品销售管理</li>
+                	<li class="li-text">库存管理</li>
                 </ul>
                 <div class="left_nav-grid" id="left_nav-grid-3">订单管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull3">
-                	<li class="li-text">1</li>
-                	<li class="li-text">2</li>
-                	<li class="li-text">3</li>
-                	<li class="li-text">4</li>
+                	<li class="li-text">订单查询</li>
+                	<li class="li-text">订单处理</li>
+                	<li class="li-text">报表打印</li>
                 </ul>
             </div>
             <%-- 中间右主内容展示区域 --%>
