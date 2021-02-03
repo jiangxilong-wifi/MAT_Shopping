@@ -113,6 +113,7 @@
     <Content Include="CSS\Color.css" />
     <Content Include="CSS\Customer.css" />
     <Content Include="CSS\CustomerOrders.css" />
+    <Content Include="CSS\Load.css" />
     <Content Include="CustomerOrders.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -126,6 +127,7 @@
     <Content Include="home.aspx" />
     <Content Include="Home.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Load.aspx" />
     <Content Include="Photo\MAT商城logo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -180,6 +182,13 @@
     </Compile>
     <Compile Include="Home.Master.designer.cs">
       <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Load.aspx.cs">
+      <DependentUpon>Load.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Load.aspx.designer.cs">
+      <DependentUpon>Load.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
