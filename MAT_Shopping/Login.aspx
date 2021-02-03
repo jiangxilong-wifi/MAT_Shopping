@@ -7,17 +7,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="CSS/Login.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="Login">
 			<div class="Login-text">MAT后台管理</div>
 			<div class="Login-user">
-				<span class="Login-logo-one"></span>
+				<span class="Login-logo glyphicon glyphicon-user"></span>
 				<input type="text" placeholder="用户名或者邮箱" class="Login-user_text"/>
 			</div>
 			<div class="Login-pwd">
-				<span class="Login-logo-two"></span>
+				<span class="Login-logo glyphicon glyphicon-lock"></span>
 				<input type="text" placeholder="密码" class="Login-user_text" />
 			</div>
 			<div class="Login-chockbox">
