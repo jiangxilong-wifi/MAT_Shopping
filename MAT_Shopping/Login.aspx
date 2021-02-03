@@ -24,7 +24,7 @@
 			<div class="Login-user">
 				<span class="Login-logo glyphicon glyphicon-user"></span>
 				<input type="text" placeholder="用户名或者邮箱" class="Login-user_text"/>
-			</div>
+			</div>  
 			<div class="Login-pwd">
 				<span class="Login-logo glyphicon glyphicon-lock"></span>
 				<input type="text" placeholder="密码" class="Login-user_text" />
