@@ -1,0 +1,72 @@
+﻿* {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #008c7e;
+}
+
+#Login {
+    margin: 300px auto;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+}
+
+.Login-text {
+    font-size:2.3rem;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 65px;
+    background-color: white;
+    height: 20%;
+}
+
+.Login-user {
+    text-align: center;
+    line-height: 65px;
+    background-color: white;
+}
+
+.Login-pwd {
+    font-size:1.5rem;
+    text-align: center;
+    line-height: 65px;
+    background-color: white;
+}
+
+.Login-user_text {
+    font-size: 1.5rem;
+    background-color: white;
+    width: 280px;
+    height: 30px;
+}
+
+.Login-chockbox {
+    font-size: 0.75rem;
+    height: 30px;
+    text-align: left;
+    line-height: 25px;
+    margin-left: 70px;
+    background-color: white;
+}
+
+.btnLogin-text {
+    margin-left: 70px;
+    text-align: center;
+    line-height: 30px;
+    width: 280px;
+}
+
+.Login-chockbox input{
+    height:14px;
+    width:14px;
+    float: left;
+    
+}
+
+.Login-logo{
+    background-color:white;
+    padding-top:2px;
+}
+
+
