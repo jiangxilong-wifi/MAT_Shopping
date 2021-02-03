@@ -14,21 +14,58 @@
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">			
 			$(function(){
-				var tooff=true; //默认关闭
+				var tooff1=true; //默认关闭
 				$("#left_nav-grid-1").click(function(){
-					if(tooff){
-						$("#ull").slideDown(200).css("display","block");
-						tooff=false;
+					if(tooff1){
+                        $("#ull").slideDown(200).css("display", "block");
+                        $("#ull").css("background-color", "rgb(34,47,72)")
+                        $(this).css("border-bottom", "4px solid gray")
+                        location.href = "/WebForm1.aspx";
+						tooff1=false;
 						
 					}else{
-						$("#ull").slideUp(200);
-						tooff=true;
+                        $("#ull").slideUp(200);
+                        $(this).css("border-bottom", "none")
+						tooff1=true;
 					}
-				});
-					
+                });
+
+                var tooff2 = true; //默认关闭
+                $("#left_nav-grid-2").click(function () {
+                    if (tooff2) {
+                        $("#ull2").slideDown(200).css("display", "block");
+                        $("#ull2").css("background-color", "rgb(34,47,72)")
+                        $(this).css("border-bottom", "4px solid gray")
+                        tooff2 = false;
+
+                    } else {
+                        $("#ull2").slideUp(200);
+                        $(this).css("border-bottom", "none")
+                        tooff2 = true;
+                    }
+                });
+
+                var tooff3 = true; //默认关闭
+                $("#left_nav-grid-3").click(function () {
+                    if (tooff3) {
+                        $("#ull3").slideDown(200).css("display", "block");
+                        $("#ull3").css("background-color", "rgb(34,47,72)")
+                        $(this).css("border-bottom", "4px solid gray")
+                        tooff3 = false;
+
+                    } else {
+                        $("#ull3").slideUp(200);
+                        $(this).css("border-bottom", "none")
+                        tooff3 = true;
+                    }
+                });
+
+
+               
 			})
 			
     </script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -49,24 +86,32 @@
         <div id="contion">
             <%-- 中间左模块栏 --%>
             <div class="left_nav">
-                <div class="left_nav-grid left_nav-grid-width" id="left_nav-grid-1"><span>用户管理</span></div>
+                <div class="left_nav-grid left_nav-grid-width" id="left_nav-grid-1">用户管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull">
-                	<li>1</li>
-                	<li>2</li>
-                	<li>3</li>
-                	<li>4</li>
+                	<li class="li-text">用户信息管理</li>
+                	<li class="li-text">用户订单管理</li>
                 </ul>
-                <div class="left_nav-grid" id="left_nav-grid-2"><span>商品管理</span></div>
-                <div class="left_nav-grid" id="left_nav-grid-3"><span>订单管理</span></div>
+                <div class="left_nav-grid" id="left_nav-grid-2">商品管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
+                <ul id="ull2">
+                	<li class="li-text">商品进出管理</li>
+                	<li class="li-text">2</li>
+                	<li class="li-text">3</li>
+                	<li class="li-text">4</li>
+                </ul>
+                <div class="left_nav-grid" id="left_nav-grid-3">订单管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
+                <ul id="ull3">
+                	<li class="li-text">1</li>
+                	<li class="li-text">2</li>
+                	<li class="li-text">3</li>
+                	<li class="li-text">4</li>
+                </ul>
             </div>
             <%-- 中间右主内容展示区域 --%>
             <div class="right_contion">
                 <div class="no1">                  
                         <div id="home">
                             首页
-                        </div>
-                    
-
+                        </div>                  
                         <div class="box-left_text">
                             用户信息管理
                         </div>
@@ -77,9 +122,8 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
-            </div>
+            </div>           
         </div>
-
     </form>
 </body>
 </html>
