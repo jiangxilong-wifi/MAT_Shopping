@@ -11,7 +11,24 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="CSS/Color.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">			
+			$(function(){
+				var tooff=true; //默认关闭
+				$("#left_nav-grid-1").click(function(){
+					if(tooff){
+						$("#ull").slideDown(200).css("display","block");
+						tooff=false;
+						
+					}else{
+						$("#ull").slideUp(200);
+						tooff=true;
+					}
+				});
+					
+			})
+			
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -32,9 +49,15 @@
         <div id="contion">
             <%-- 中间左模块栏 --%>
             <div class="left_nav">
-                <div class="left_nav-grid left_nav-grid-width"><span>用户管理</span></div>
-                <div class="left_nav-grid"><span>商品管理</span></div>
-                <div class="left_nav-grid"><span>订单管理</span></div>
+                <div class="left_nav-grid left_nav-grid-width" id="left_nav-grid-1"><span>用户管理</span></div>
+                <ul id="ull">
+                	<li>1</li>
+                	<li>2</li>
+                	<li>3</li>
+                	<li>4</li>
+                </ul>
+                <div class="left_nav-grid" id="left_nav-grid-2"><span>商品管理</span></div>
+                <div class="left_nav-grid" id="left_nav-grid-3"><span>订单管理</span></div>
             </div>
             <%-- 中间右主内容展示区域 --%>
             <div class="right_contion">
@@ -42,6 +65,8 @@
                         <div id="home">
                             首页
                         </div>
+                    
+
                         <div class="box-left_text">
                             用户信息管理
                         </div>
@@ -51,6 +76,7 @@
                 </div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
             </div>
         </div>
 

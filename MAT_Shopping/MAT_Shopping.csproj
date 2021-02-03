@@ -112,6 +112,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="CSS\Color.css" />
     <Content Include="CSS\Customer.css" />
+    <Content Include="CSS\CustomerOrders.css" />
+    <Content Include="CustomerOrders.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -158,6 +160,13 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CustomerOrders.aspx.cs">
+      <DependentUpon>CustomerOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerOrders.aspx.designer.cs">
+      <DependentUpon>CustomerOrders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
