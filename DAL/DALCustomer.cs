@@ -9,11 +9,11 @@ namespace DAL
 {
     public static class DALCustomer
     {
-        //查询用户
-        public static bool DALSelectCustomer(MODCustomer customer)
-        {
+        ////查询用户
+        //public static bool DALSelectCustomer(MODCustomer customer)
+        //{
 
-        }
+        //}
         
     }
 }
