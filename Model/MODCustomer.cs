@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Model
 {
     //用户表
-    public class MODCustomer
+    public  class MODCustomer
     {
         //用户ID
         private static int userID;

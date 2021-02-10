@@ -11,10 +11,7 @@
 	<script src="Scripts/jquery-3.4.1.min.js"></script>
 	<script>
 		//jQuery
-		$(function(){
-			$(".btnLogin-text").click(function () {
-				location.href = "Load.aspx";
-			});
+		$(function(){			
 			//用户输入框显示提示信息
 			$("#tbName").attr("placeholder", "用户名或邮箱");
 			$("#tbPwd").attr("placeholder", "密码");
@@ -37,7 +34,7 @@
 			<div class="Login-chockbox">    
 				<input type="checkbox" />&nbsp;记住密码
 			</div>
-            <asp:Button ID="Button1" runat="server" Text="登录" class="btnLogin-text" ForeColor="White"/>
+            <asp:Button ID="BtnLogin" runat="server" Text="登录" class="btnLogin-text" ForeColor="White" OnClick="BtnLogin_Click"/>
 		    
 		</div>
     </form>
