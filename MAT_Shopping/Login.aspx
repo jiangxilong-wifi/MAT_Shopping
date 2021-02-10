@@ -10,11 +10,14 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 	<script src="Scripts/jquery-3.4.1.min.js"></script>
 	<script>
+		//jQuery
 		$(function(){
-            $(".btnLogin-text").click(function () {
-                location.href = "Load.aspx";
-			})
-			$("#tbName").blur(function () { $(this).text("fds"); })
+			$(".btnLogin-text").click(function () {
+				location.href = "Load.aspx";
+			});
+			//用户输入框显示提示信息
+			$("#tbName").attr("placeholder", "用户名或邮箱");
+			$("#tbPwd").attr("placeholder", "密码");
         })
     </script>
 </head>
@@ -24,14 +27,14 @@
 			<div class="Login-text">MAT后台管理</div>
 			<div class="Login-user">
 				<span class="Login-logo glyphicon glyphicon-user"></span>
-                <asp:TextBox ID="tbName" runat="server" text="手机号或邮箱" class="Login-user_text" BorderStyle="Solid"></asp:TextBox>
+                <asp:TextBox ID="tbName" runat="server"  class="Login-user_text" BorderStyle="Solid"></asp:TextBox>
 			</div>  
 			<div class="Login-pwd">
 				<span class="Login-logo glyphicon glyphicon-lock"></span>
-				<asp:TextBox ID="TextBox2" runat="server" text="密码" class="Login-user_text" BorderStyle="Solid"></asp:TextBox>
+				<asp:TextBox ID="tbPwd" runat="server"  class="Login-user_text" BorderStyle="Solid"></asp:TextBox>
 				
 			</div>
-			<div class="Login-chockbox">
+			<div class="Login-chockbox">    
 				<input type="checkbox" />&nbsp;记住密码
 			</div>
             <asp:Button ID="Button1" runat="server" Text="登录" class="btnLogin-text" ForeColor="White"/>
