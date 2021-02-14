@@ -11,17 +11,10 @@ namespace BLL
     public static class BLLCustomer
     {
         //查询用户
-        public static bool BLLSelectCustomer(string Login, string Pwd)
+        public static List<MODCustomer> BLLSelectCustomer(string Login, string Pwd)
         {
-            //查询用户
-            if (DALCustomer.DALSelectCustomer(Login, Pwd))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //查询用户信息
+            return DALCustomer.DALSelectCustomer(Login, Pwd);
         }
     }
 }
