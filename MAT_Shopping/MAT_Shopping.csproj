@@ -110,13 +110,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="CSS\Color.css" />
     <Content Include="CSS\Customer.css" />
     <Content Include="CSS\CustomerOrders.css" />
     <Content Include="CSS\GoodsInformation.css" />
     <Content Include="CSS\Load.css" />
     <Content Include="CSS\Login.css" />
-    <Content Include="CustomerOrders.aspx" />
+    <Content Include="CSS\Master.css" />
+    <Content Include="CustomerOrderManagement.aspx" />
     <Content Include="Error_404.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -128,7 +128,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="GoodsInformation.aspx" />
-    <Content Include="home.aspx" />
+    <Content Include="UserInformationManagement.aspx" />
     <Content Include="Home.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Load.aspx" />
@@ -167,12 +167,12 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="CustomerOrders.aspx.cs">
-      <DependentUpon>CustomerOrders.aspx</DependentUpon>
+    <Compile Include="CustomerOrderManagement.aspx.cs">
+      <DependentUpon>CustomerOrderManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CustomerOrders.aspx.designer.cs">
-      <DependentUpon>CustomerOrders.aspx</DependentUpon>
+    <Compile Include="CustomerOrderManagement.aspx.designer.cs">
+      <DependentUpon>CustomerOrderManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error_404.aspx.cs">
       <DependentUpon>Error_404.aspx</DependentUpon>
@@ -188,12 +188,12 @@
     <Compile Include="GoodsInformation.aspx.designer.cs">
       <DependentUpon>GoodsInformation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="UserInformationManagement.aspx.cs">
+      <DependentUpon>UserInformationManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="UserInformationManagement.aspx.designer.cs">
+      <DependentUpon>UserInformationManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>

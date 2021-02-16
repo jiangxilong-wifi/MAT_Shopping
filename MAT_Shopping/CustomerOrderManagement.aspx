@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="CustomerOrders.aspx.cs" Inherits="MAT_Shopping.CustomerOrders" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="CustomerOrderManagement.aspx.cs" Inherits="MAT_Shopping.CustomerOrders" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/CustomerOrders.css" rel="stylesheet" />
 </asp:Content>

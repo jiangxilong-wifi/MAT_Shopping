@@ -13,63 +13,63 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">			
-			$(function(){
-				var tooff1=true; //默认关闭
-				$("#left_nav-grid-1").click(function(){
-					if(tooff1){
-                        $("#ull").slideDown(200).css("display", "block");
-                        $("#ull").css("background-color", "rgb(34,47,72)")
-                        $(this).css("border-bottom", "4px solid gray")
-						tooff1=false;
-						
-					}else{
-                        $("#ull").slideUp(200);
-                        $(this).css("border-bottom", "none")
-						tooff1=true;
-					}
-                });
+        $(function () {
+            var tooff1 = true; //默认关闭
+            $("#left_nav-grid-1").click(function () {
+                if (tooff1) {
+                    $("#ull").slideDown(200).css("display", "block");
+                    $("#ull").css("background-color", "rgb(34,47,72)")
+                    $(this).css("border-bottom", "4px solid gray")
+                    tooff1 = false;
 
-                var tooff2 = true; //默认关闭
-                $("#left_nav-grid-2").click(function () {
-                    if (tooff2) {
-                        $("#ull2").slideDown(200).css("display", "block");
-                        $("#ull2").css("background-color", "rgb(34,47,72)")
-                        $(this).css("border-bottom", "4px solid gray")
-                        tooff2 = false;
+                } else {
+                    $("#ull").slideUp(200);
+                    $(this).css("border-bottom", "none")
+                    tooff1 = true;
+                }
+            });
 
-                    } else {
-                        $("#ull2").slideUp(200);
-                        $(this).css("border-bottom", "none")
-                        tooff2 = true;
-                    }
-                });
+            var tooff2 = true; //默认关闭
+            $("#left_nav-grid-2").click(function () {
+                if (tooff2) {
+                    $("#ull2").slideDown(200).css("display", "block");
+                    $("#ull2").css("background-color", "rgb(34,47,72)")
+                    $(this).css("border-bottom", "4px solid gray")
+                    tooff2 = false;
 
-                var tooff3 = true; //默认关闭
-                $("#left_nav-grid-3").click(function () {
-                    if (tooff3) {
-                        $("#ull3").slideDown(200).css("display", "block");
-                        $("#ull3").css("background-color", "rgb(34,47,72)")
-                        $(this).css("border-bottom", "4px solid gray")
-                        tooff3 = false;
+                } else {
+                    $("#ull2").slideUp(200);
+                    $(this).css("border-bottom", "none")
+                    tooff2 = true;
+                }
+            });
 
-                    } else {
-                        $("#ull3").slideUp(200);
-                        $(this).css("border-bottom", "none")
-                        tooff3 = true;
-                    }
-                });
+            var tooff3 = true; //默认关闭
+            $("#left_nav-grid-3").click(function () {
+                if (tooff3) {
+                    $("#ull3").slideDown(200).css("display", "block");
+                    $("#ull3").css("background-color", "rgb(34,47,72)")
+                    $(this).css("border-bottom", "4px solid gray")
+                    tooff3 = false;
 
-                $(".li-text-user").click(function () {
-                    location.href = "home.aspx"; 
-                })
-                $(".li-text-orders").click(function () {
-                    location.href = "CustomerOrders.aspx";
-                })
-               $(".li-text-goodsinformation").click(function () {
-                    location.href = "GoodsInformation.aspx";
-                })
-			})
-			
+                } else {
+                    $("#ull3").slideUp(200);
+                    $(this).css("border-bottom", "none")
+                    tooff3 = true;
+                }
+            });
+
+            $(".li-text-user").click(function () {
+                location.href = "home.aspx";
+            })
+            $(".li-text-orders").click(function () {
+                location.href = "CustomerOrders.aspx";
+            })
+            $(".li-text-goodsinformation").click(function () {
+                location.href = "GoodsInformation.aspx";
+            })
+        })
+
     </script>
 
 </head>
@@ -94,40 +94,29 @@
             <div class="left_nav">
                 <div class="left_nav-grid left_nav-grid-width" id="left_nav-grid-1">用户管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull">
-                	<li class="li-text li-text-user">用户信息管理</li>
-                	<li class="li-text li-text-orders">用户订单管理</li>
+                    <li class="li-text li-text-user">用户信息管理</li>
+                    <li class="li-text li-text-orders">用户订单管理</li>
                 </ul>
                 <div class="left_nav-grid" id="left_nav-grid-2">商品管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull2">
-                	<li class="li-text li-text-goodsinformation">商品信息管理</li>
-                	<li class="li-text">商品销售管理</li>
-                	<li class="li-text">库存管理</li>
+                    <li class="li-text li-text-goodsinformation">商品信息管理</li>
+                    <li class="li-text">商品销售管理</li>
+                    <li class="li-text">库存管理</li>
                 </ul>
                 <div class="left_nav-grid" id="left_nav-grid-3">订单管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull3">
-                	<li class="li-text">订单查询</li>
-                	<li class="li-text">订单处理</li>
-                	<li class="li-text">报表打印</li>
+                    <li class="li-text">订单查询</li>
+                    <li class="li-text">订单处理</li>
+                    <li class="li-text">报表打印</li>
                 </ul>
             </div>
             <%-- 中间右主内容展示区域 --%>
             <div class="right_contion">
-                <div class="no1">                  
-                        <div id="home">
-                            首页
-                        </div>                  
-                        <div class="box-left_text">
-                            用户信息管理
-                        </div>
-                        <div class="box-left_text">
-                            页面操作
-                        </div>                    
-                </div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
-            </div>           
+            </div>
         </div>
     </form>
 </body>
