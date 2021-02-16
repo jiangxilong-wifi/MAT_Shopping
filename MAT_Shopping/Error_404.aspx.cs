@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace MAT_Shopping
 {
-    public partial class Load : System.Web.UI.Page
+    public partial class Error_404 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

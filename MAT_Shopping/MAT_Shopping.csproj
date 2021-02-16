@@ -117,6 +117,7 @@
     <Content Include="CSS\Load.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CustomerOrders.aspx" />
+    <Content Include="Error_404.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -172,6 +173,13 @@
     </Compile>
     <Compile Include="CustomerOrders.aspx.designer.cs">
       <DependentUpon>CustomerOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error_404.aspx.cs">
+      <DependentUpon>Error_404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error_404.aspx.designer.cs">
+      <DependentUpon>Error_404.aspx</DependentUpon>
     </Compile>
     <Compile Include="GoodsInformation.aspx.cs">
       <DependentUpon>GoodsInformation.aspx</DependentUpon>
