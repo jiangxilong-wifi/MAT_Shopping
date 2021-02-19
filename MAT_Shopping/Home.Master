@@ -9,7 +9,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="CSS/Color.css" rel="stylesheet" />
+    
+    <link href="CSS/Master.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">			
@@ -58,20 +59,21 @@
                     tooff3 = true;
                 }
             });
-
+            //点击用户管理
             $(".li-text-user").click(function () {
-                location.href = "home.aspx";
+                location.href = "UserInformationManagement.aspx";
             })
+            //点击用户订单管理
             $(".li-text-orders").click(function () {
-                location.href = "CustomerOrders.aspx";
+                location.href = "CustomerOrderManagement.aspx";
             })
+            //点击商品信息管理
             $(".li-text-goodsinformation").click(function () {
                 location.href = "GoodsInformation.aspx";
             })
         })
 
     </script>
-
 </head>
 <body>
     <form id="form1" runat="server">
