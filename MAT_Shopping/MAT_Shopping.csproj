@@ -133,6 +133,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Load.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Photo\404图标.PNG" />
     <Content Include="Photo\MAT商城logo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
