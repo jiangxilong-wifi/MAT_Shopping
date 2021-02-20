@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL;
 
 namespace MAT_Shopping
 {
@@ -11,7 +12,11 @@ namespace MAT_Shopping
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                gvUser.DataSource = BLLCustomer.BLLSelectCustomerAll();
+                gvUser.DataBind();
+            }
         }
     }
 }

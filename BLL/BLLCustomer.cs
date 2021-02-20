@@ -16,5 +16,12 @@ namespace BLL
             //查询用户信息
             return DALCustomer.DALSelectCustomer(Login, Pwd);
         }
+
+        //查询所有用户信息
+        public static List<MODCustomer> BLLSelectCustomerAll()
+        {
+            //查询用户信息
+            return DALCustomer.DALSelectCustomerAll();
+        }
     }
 }
