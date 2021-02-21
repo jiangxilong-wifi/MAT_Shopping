@@ -33,10 +33,10 @@ namespace MAT_Shopping
             else
             {
                 //判断输入的字符串是否匹配正则
-                if (Regex.IsMatch(tbName.Text, "^[A-Za-z]{1,8}$"))
+                if (Regex.IsMatch(tbName.Text, "^[A-Za-z]{1,10}$"))
                 {
                     //调用查询方法
-                    if (BLLCustomer.BLLSelectCustomer(tbName.Text, tbPwd.Text) != null)
+                    if (BLLCustomer.BLLSelectCustomer(tbName.Text, tbPwd.Text))
                     {
                         //存储该用户
                         MODCustomer Customer = new MODCustomer();
