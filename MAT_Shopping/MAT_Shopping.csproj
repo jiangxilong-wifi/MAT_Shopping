@@ -113,6 +113,7 @@
     <Content Include="CSS\Customer.css" />
     <Content Include="CSS\CustomerOrders.css" />
     <Content Include="CSS\GoodsInformation.css" />
+    <Content Include="CSS\gvUser.css" />
     <Content Include="CSS\Load.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\Master.css" />

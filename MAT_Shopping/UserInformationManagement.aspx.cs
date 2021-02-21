@@ -18,5 +18,10 @@ namespace MAT_Shopping
                 gvUser.DataBind();
             }
         }
+
+        protected void gvUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
