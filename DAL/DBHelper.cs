@@ -11,7 +11,7 @@ namespace DAL
     public static class DBHelper
     {
         //数据库连接字符串
-        private static string ConnString = @"server=DESKTOP-506EVOD\MSSQLSERVER01;database=MATShopping;uid=sa;pwd=123456";
+        private static string ConnString = @"server=106.54.89.71;database=MATShopping;uid=sa;pwd=123456";
         //数据库连接对象
         private static SqlConnection Conn = null;
         //初始化数据库连接
