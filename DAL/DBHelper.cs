@@ -74,8 +74,8 @@ namespace DAL
             InitConnection();
             SqlCommand cmd = new SqlCommand(sqlStr, Conn);
             int result = int.Parse(cmd.ExecuteScalar().ToString());
-            
-            return result>0;
+
+            return result > 0;
         }
 
         //查询，获取DataSet
