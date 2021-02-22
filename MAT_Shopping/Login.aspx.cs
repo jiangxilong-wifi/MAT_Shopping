@@ -55,10 +55,6 @@ namespace MAT_Shopping
                     Response.Write("<script>alert('用户名或密码错误');</script>");
                 }
             }
-           
-            
-
-
         }
 
     }
