@@ -54,6 +54,13 @@ namespace DAL
             }
             return listCustomer;
         }
+        //编辑更新
+        public static bool Uptade(MODCustomer modcustomer)
+        {
+            string sql = string.Format("update Customer set  UserName='{0}',Login='{1}',Pwd='{2}',Address='{3}',Phone='{4}',Email='{5}'where UserID='{6}'"
+                ,modcustomer.UserName, modcustomer.Login,modcustomer.Pwd,modcustomer.Address,modcustomer.Phone,modcustomer.Email,modcustomer.UserID);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
 
     }
 }

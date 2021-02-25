@@ -59,6 +59,20 @@
                     tooff3 = true;
                 }
             });
+            var tooff4 = true; //默认关闭
+            $("#left_nav-grid-4").click(function () {
+                if (tooff4) {
+                    $("#ull4").slideDown(200).css("display", "block");
+                    $("#ull4").css("background-color", "rgb(34,47,72)")
+                    $(this).css("border-bottom", "4px solid gray")
+                    tooff4 = false;
+
+                } else {
+                    $("#ull4").slideUp(200);
+                    $(this).css("border-bottom", "none")
+                    tooff4 = true;
+                }
+            });
             //点击用户管理
             $(".li-text-user").click(function () {
                 location.href = "UserInformationManagement.aspx";
@@ -70,6 +84,13 @@
             //点击商品信息管理
             $(".li-text-goodsinformation").click(function () {
                 location.href = "GoodsInformation.aspx";
+            })
+            //点击库存管理
+            $(".li-text-inventory").click(function () {
+                location.href = "inventory.aspx";
+            })
+            $(".li-text").click(function () {
+                $("#cz").html($(".li-text"));
             })
         })
 
@@ -84,6 +105,10 @@
             </div>
             <div id="header_right">
                 <div class="header">
+                    <%-- 当前操作 --%>
+                    <div>
+                        <p id="cz"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,14 +127,17 @@
                 <div class="left_nav-grid" id="left_nav-grid-2">商品管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull2">
                     <li class="li-text li-text-goodsinformation">商品信息管理</li>
-                    <li class="li-text">商品销售管理</li>
-                    <li class="li-text">库存管理</li>
+                    <li class="li-text li-text-inventory">库存管理</li>
                 </ul>
                 <div class="left_nav-grid" id="left_nav-grid-3">订单管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
                 <ul id="ull3">
                     <li class="li-text">订单查询</li>
                     <li class="li-text">订单处理</li>
                     <li class="li-text">报表打印</li>
+                </ul>
+                <div class="left_nav-grid" id="left_nav-grid-4">广告管理<span class="glyphicon glyphicon-chevron-up ico-margin"></span></div>
+                <ul id="ull4">
+                    <li class="li-text">主页投放管理</li>
                 </ul>
             </div>
             <%-- 中间右主内容展示区域 --%>
@@ -118,8 +146,13 @@
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server"></asp:ContentPlaceHolder>
             </div>
         </div>
+         <%-- 以下为内容添加 --%>
+         <div class="background">
+
+            </div>
     </form>
 </body>
 </html>

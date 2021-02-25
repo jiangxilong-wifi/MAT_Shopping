@@ -1,14 +1,18 @@
-﻿
+﻿* {
+    padding: 0px;
+    margin: 0px;
+}
 
-.no2 {
-    border: 1px solid white;
+
+.co2 {
+    border: 1px solid gainsboro;
     border-left: 6px solid green;
     margin: 1%;
     width: 98%;
     height: 70px;
 }
 
-.no3 {
+.co3 {
     padding: 10px;
     border: 1px solid gainsboro;
     width: 98%;
@@ -18,75 +22,70 @@
 
 
 
-#Customer-section {
+#inventory-section {
     margin: 15px;
     width: 100%;
     height: 140px;
     display: flex;
 }
 
-.section-second {
+.inventory-section-second {
     width: 15%;
     height: 35px;
 }
 
-.section-third {
+.inventory-section-third {
     width: 15%;
     height: 35px;
 }
 
-.section-fourth {
+.inventory-section-fourth {
     width: 15%;
     height: 35px;
 }
 
-.section-fifth {
+.inventory-section-fifth {
     width: 53%;
     height: 35px;
 }
 
-.input-text-one {
+.inventory-input-text-one {
     line-height: 30px;
     width: 80%;
 }
 
-.input-text-two {
+.inventory-input-text-two {
     line-height: 30px;
     width: 80%;
 }
 
-.input-button-one {
+.inventory-input-button-one {
     width: 80%;
     height: 35px;
 }
-.adddel {
+
+.inventory-adddel {
     height: 40px;
     width: 100%;
     display: flex;
 }
 
-/*统一样式*/
-.ad {
-    
+.inventory-ad {
     width: 100px;
     height: 100%;
     border-radius: 5px;
     background-color: rgb(15,135,249);
 }
 
-.del {
+.inventory-del {
     margin-left: 20px;
 }
 
-.add {
-    line-height:40px;
-    text-align:center;
-    font-size:1.5rem;
-    color: white;
+.inventory-add {
     margin-left: 40px;
 }
 
-.gridView {
+.inventory-gridView {
     margin-top: 15px;
     width: 100%;
     height: 85%;

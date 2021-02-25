@@ -23,5 +23,10 @@ namespace BLL
             //查询用户信息
             return DALCustomer.DALSelectCustomerAll();
         }
+        //编辑更新
+        public static bool Uptade(MODCustomer modcustomer)
+        {
+            return DALCustomer.Uptade(modcustomer);
+        }
     }
 }

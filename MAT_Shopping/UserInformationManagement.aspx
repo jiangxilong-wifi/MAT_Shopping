@@ -3,10 +3,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/Customer.css" rel="stylesheet" />
     <link href="CSS/gvUser.css" rel="stylesheet" />
+    <link href="CSS/Float_UserAdd.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-        //jQuery
         $(function () {
-
+            //点击显示添加用户界面
+            $(".add").click(function () {
+                $(".background").fadeIn(260).css("display", "block")
+                $(".top").fadeIn(300).css("display", "block")
+            })
+            $(".top-exit-ico_right").click(function () {
+                $(".background").fadeOut(240, function () { $(".top").css("display", "none") })
+                $(".top").fadeOut(300, function () { $(".top").css("display", "none")})
+            })
+            $(".btnInsertUser").click(function () {
+                alert("添加成功！")
+            })
         })
     </script>
 </asp:Content>
@@ -36,13 +48,80 @@
         <%-- 用户信息操作 --%>
         <div class="adddel">
             <%-- 添加用户按钮 --%>
-            <asp:Button ID="Button1" runat="server" Text="添加用户" class="add ad" BorderStyle="None" Font-Bold="False" ForeColor="White" Font-Names="幼圆" Font-Size="Small" />
+            <!--点击此按钮弹出添加用户悬浮页面-->
+            <div class="add ad">
+                点击添加
+            </div>
+            <div class="top">
+                <%-- 导航条 --%>
+                <div class="top-exit">
+                    添加用户信息
+                    <%-- 退出按钮 --%>
+                    <div class="top-exit-ico_right ">
+                        <div class="top-exit-ico glyphicon glyphicon-remove-circle"></div>
+                    </div>
+                </div>
+                <!--用一个盒子再装用户名和文本框-->
+                <div class="top-text">
+                    <div class="top-text_table_box">
+                        <table class="top-text-table">
+                            <tr>
+                                <td class="top-text-td">用户名：</td>
+                                <td>
+                                    <input type="text" class="inputstyle" /></td>
+                            </tr>
+                            <tr>
+                                <td class="top-text-td">登录名：</td>
+                                <td>
+                                    <input type="text" class="inputstyle" /></td>
+                            </tr>
+                            <tr>
+                                <td class="top-text-td">密码：</td>
+                                <td>
+                                    <input type="text" class="inputstyle" /></td>
+                            </tr>
+                            <tr>
+                                <td class="top-text-td">地址：</td>
+                                <td>
+                                    <input type="text" class="inputstyle" /></td>
+                            </tr>
+                            <tr>
+                                <td class="top-text-td">电话：</td>
+                                <td>
+                                    <input type="text" class="inputstyle" /></td>
+                            </tr>
+                            <tr>
+                                <td class="top-text-td">邮箱：</td>
+                                <td>
+                                    <input type="text" class="inputstyle" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <%-- 悬浮窗内的添加按钮 --%>
+                    <div class="foot-text">
+                        <div class="foot-text_center">
+                            <div class="foot-text_center_height">
+                                <%-- 按钮 --%>
+                                <div class="foot-text_center_height_btn btn1">
+
+                                </div>
+                                <div  class="foot-text_center_height_btn btn2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
             <%-- 删除用户按钮 --%>
-            <asp:Button ID="Button2" runat="server" Text="删除用户"  class="del ad" BorderStyle="None" Font-Bold="False" Font-Names="幼圆" Font-Size="Small" ForeColor="White"/>
+            <asp:Button ID="Button2" runat="server" Text="删除用户" class="del ad" BorderStyle="None" Font-Bold="False" Font-Names="幼圆" Font-Size="Small" ForeColor="White" />
         </div>
         <%-- 用户信息显示 --%>
         <div class="gridView">
-            <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="False" CssClass="mGrid" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvUser_SelectedIndexChanged">
+            <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="False" CssClass="mGrid" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvUser_SelectedIndexChanged" DataKeyNames="UserID" OnRowCancelingEdit="gvUser_RowCancelingEdit" OnRowEditing="gvUser_RowEditing" OnRowUpdating="gvUser_RowUpdating" Width="1200px">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:TemplateField HeaderText="选择">
@@ -57,7 +136,7 @@
                             <asp:CheckBox ID="CheckBox1" runat="server" />
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField DataField="UserID" HeaderText="用户ID" />
+                    <asp:BoundField DataField="UserID" HeaderText="用户ID" ReadOnly="True" />
                     <asp:BoundField DataField="UserName" HeaderText="用户姓名" />
                     <asp:BoundField DataField="Login" HeaderText="登录名" />
                     <asp:BoundField DataField="Pwd" HeaderText="登录密码" />

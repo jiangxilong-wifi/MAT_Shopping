@@ -112,8 +112,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="CSS\Customer.css" />
     <Content Include="CSS\CustomerOrders.css" />
+    <Content Include="CSS\Float_UserAdd.css" />
     <Content Include="CSS\GoodsInformation.css" />
     <Content Include="CSS\gvUser.css" />
+    <Content Include="CSS\gvUserOrder.css" />
+    <Content Include="CSS\inventory.css" />
     <Content Include="CSS\Load.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\Master.css" />
@@ -129,6 +132,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="GoodsInformation.aspx" />
+    <Content Include="inventory.aspx" />
     <Content Include="UserInformationManagement.aspx" />
     <Content Include="Home.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -188,6 +192,13 @@
     </Compile>
     <Compile Include="GoodsInformation.aspx.designer.cs">
       <DependentUpon>GoodsInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory.aspx.cs">
+      <DependentUpon>inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory.aspx.designer.cs">
+      <DependentUpon>inventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserInformationManagement.aspx.cs">
       <DependentUpon>UserInformationManagement.aspx</DependentUpon>
