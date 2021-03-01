@@ -121,7 +121,7 @@
             </div>
 
             <%-- 删除用户按钮 --%>
-            <asp:Button ID="Button2" runat="server" Text="删除用户" class="del ad" BorderStyle="None" Font-Bold="False" Font-Names="幼圆" Font-Size="Small" ForeColor="White" />
+            <asp:Button ID="Button2" runat="server" Text="删除用户" class="del ad" BorderStyle="None" Font-Bold="False" font-size="Medium" ForeColor="White" />
         </div>
         <%-- 用户信息显示 --%>
         <div class="gridView">

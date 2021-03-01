@@ -67,7 +67,6 @@
 
 /*统一样式*/
 .ad {
-    
     width: 100px;
     height: 100%;
     border-radius: 5px;
@@ -81,8 +80,9 @@
 .add {
     line-height:40px;
     text-align:center;
-    font-size:1.5rem;
+    font-size:1.6rem;
     color: white;
+    cursor:pointer;
     margin-left: 40px;
 }
 
