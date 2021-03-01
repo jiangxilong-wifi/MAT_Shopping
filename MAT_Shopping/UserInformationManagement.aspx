@@ -68,32 +68,38 @@
                             <tr>
                                 <td class="top-text-td">用户名：</td>
                                 <td>
-                                    <input type="text" class="inputstyle" /></td>
+                                    <asp:TextBox ID="TextBox1" runat="server"  class="inputstyle" ></asp:TextBox>
+                                    </td>
                             </tr>
                             <tr>
                                 <td class="top-text-td">登录名：</td>
                                 <td>
-                                    <input type="text" class="inputstyle" /></td>
+                                    <asp:TextBox ID="TextBox2" runat="server" class="inputstyle"></asp:TextBox>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="top-text-td">密码：</td>
                                 <td>
-                                    <input type="text" class="inputstyle" /></td>
+                                    <asp:TextBox ID="TextBox3" runat="server" class="inputstyle"></asp:TextBox>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="top-text-td">地址：</td>
                                 <td>
-                                    <input type="text" class="inputstyle" /></td>
+                                    <asp:TextBox ID="TextBox4" runat="server" class="inputstyle"></asp:TextBox>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="top-text-td">电话：</td>
                                 <td>
-                                    <input type="text" class="inputstyle" /></td>
+                                    <asp:TextBox ID="TextBox5" runat="server" class="inputstyle"></asp:TextBox>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="top-text-td">邮箱：</td>
                                 <td>
-                                    <input type="text" class="inputstyle" /></td>
+                                    <asp:TextBox ID="TextBox6" runat="server" class="inputstyle"></asp:TextBox>
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -102,12 +108,10 @@
                         <div class="foot-text_center">
                             <div class="foot-text_center_height">
                                 <%-- 按钮 --%>
-                                <div class="foot-text_center_height_btn btn1">
-
-                                </div>
-                                <div  class="foot-text_center_height_btn btn2">
-
-                                </div>
+                                <asp:Button ID="Button1" runat="server" Text="确认修改"  class="foot-text_center_height_btn btn1" BorderStyle="None" />
+                               
+                                <asp:Button ID="Button3" runat="server" Text="重置"   class="foot-text_center_height_btn btn2" BorderStyle="None" />
+                                
                             </div>
                         </div>
                     </div>
