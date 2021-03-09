@@ -12,7 +12,7 @@
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script>
         //jQuery
-        $(function () {
+        $(function () {界面界面家摸摸
             //用户输入框显示提示信息
             $("#tbName").attr("placeholder", "用户名或邮箱");
             $("#tbPwd").attr("placeholder", "密码");
