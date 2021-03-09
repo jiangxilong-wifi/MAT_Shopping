@@ -68,8 +68,8 @@
                             <tr>
                                 <td class="top-text-td">用户名：</td>
                                 <td>
-                                    <asp:TextBox ID="TextBox1" runat="server"  class="inputstyle" ></asp:TextBox>
-                                    </td>
+                                    <asp:TextBox ID="TextBox1" runat="server" class="inputstyle"></asp:TextBox>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="top-text-td">登录名：</td>
@@ -108,24 +108,19 @@
                         <div class="foot-text_center">
                             <div class="foot-text_center_height">
                                 <%-- 按钮 --%>
-                                <asp:Button ID="Button1" runat="server" Text="确认修改"  class="foot-text_center_height_btn btn1" BorderStyle="None" />
-                               
-                                <asp:Button ID="Button3" runat="server" Text="重置"   class="foot-text_center_height_btn btn2" BorderStyle="None" />
-                                
+                                <asp:Button ID="Button1" runat="server" Text="确认修改" class="foot-text_center_height_btn btn1" BorderStyle="None" OnClick="Button1_Click1" />
+                                <asp:Button ID="Button3" runat="server" Text="重置" class="foot-text_center_height_btn btn2" BorderStyle="None" />
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
             </div>
-
             <%-- 删除用户按钮 --%>
-            <asp:Button ID="Button2" runat="server" Text="删除用户" class="del ad" BorderStyle="None" Font-Bold="False" font-size="Medium" ForeColor="White" />
+            <asp:Button ID="Button2" runat="server" Text="删除用户" class="del ad" BorderStyle="None" Font-Bold="False" Font-Size="Medium" ForeColor="White" />
         </div>
         <%-- 用户信息显示 --%>
         <div class="gridView">
-            <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="False" CssClass="mGrid" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvUser_SelectedIndexChanged" DataKeyNames="UserID" OnRowCancelingEdit="gvUser_RowCancelingEdit" OnRowEditing="gvUser_RowEditing" OnRowUpdating="gvUser_RowUpdating" Width="1200px">
+            <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="False" CssClass="mGrid" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvUser_SelectedIndexChanged" DataKeyNames="UserID" OnRowCancelingEdit="gvUser_RowCancelingEdit" OnRowEditing="gvUser_RowEditing" OnRowUpdating="gvUser_RowUpdating" Width="1200px" OnRowCommand="gvUser_RowCommand">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:TemplateField HeaderText="选择">
@@ -154,6 +149,12 @@
                         </EditItemTemplate>
                         <ItemTemplate>
                             <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="编辑"></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="删除">
+                        <ItemTemplate>
+                            <asp:LinkButton ID="LinkButton4" runat="server">LinkButton</asp:LinkButton>
+                            <asp:LinkButton ID="LinkButton3" runat="server" OnClientClick="return confirm('确认删除')" CommandName="Delete" CommandArgument='<%# Eval("UserID") %>'>删除</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

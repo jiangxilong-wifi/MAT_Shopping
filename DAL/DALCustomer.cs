@@ -62,5 +62,20 @@ namespace DAL
             return DBHelper.ExecuteNonQuery(sql);
         }
 
+        //新增用户
+        public static bool DALInsertCustomer(MODCustomer customer)
+        {
+            string insertsql = string.Format("insert Customer(UserName,Login,Pwd,Address,Phone,Email) values('{0}','{1}','{2}','{3}','{4}','{5}')",customer.UserName,customer.Login,customer.Pwd,customer.Address,customer.Phone,customer.Email);
+            //新增数据判断
+            if (DBHelper.ExecuteNonQuery(insertsql))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

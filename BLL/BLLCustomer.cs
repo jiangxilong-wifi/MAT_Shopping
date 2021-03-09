@@ -28,5 +28,11 @@ namespace BLL
         {
             return DALCustomer.Uptade(modcustomer);
         }
+
+        //新增用户
+        public static bool BLLAddCustomer(MODCustomer customer)
+        {
+            return DALCustomer.DALInsertCustomer(customer);
+        }
     }
 }

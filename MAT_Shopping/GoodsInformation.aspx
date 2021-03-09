@@ -34,7 +34,7 @@
 		    </div>
             <%-- 商品信息管理表格 --%>
 		    <div class="go3-gridView">
-                <asp:GridView ID="gvGoodsInformation" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" Height="400px" OnPageIndexChanging="gvGoodsInformation_PageIndexChanging" Width="1200px" DataKeyNames="GoodsID" OnRowDeleting="gvGoodsInformation_RowDeleting">
+                <asp:GridView ID="gvGoodsInformation" runat="server" AutoGenerateColumns="False" CssClass="mGrid" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" Height="400px" OnPageIndexChanging="gvGoodsInformation_PageIndexChanging" Width="1200px" DataKeyNames="GoodsID" OnRowDeleting="gvGoodsInformation_RowDeleting">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:BoundField DataField="GoodsID" HeaderText="商品ID" ReadOnly="True" />
